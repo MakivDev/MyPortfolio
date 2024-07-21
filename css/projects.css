@@ -1,0 +1,257 @@
+@import url(reset.css);
+
+body {
+  background: #282c33;
+  color: #abb2bf;
+  font-family: "Fira Code", monospace;
+}
+
+.container {
+  max-width: 1084px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.special-text {
+  color: var(--primary, #c778dd);
+}
+/* nav */
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav {
+  background-color: #282c33;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 16px 8px;
+  max-width: 1050px;
+  width: 75vw;
+  position: fixed;
+  z-index: 10000;
+  box-shadow: 0 0 0.5px #c778dd;
+}
+
+.nav-list {
+  right: 155px;
+  display: flex;
+  column-gap: 32px; /*відступи між колонками */
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-link {
+  color: #abb2bf;
+  white-space: nowrap;
+}
+
+.nav-link.active {
+  color: white;
+  font-weight: 700;
+}
+
+.nav-button {
+  display: none;
+}
+
+.nav-button1,
+.nav-button2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.nav-button-up1 {
+  background: #abb2bf;
+  width: 25px;
+  height: 2px;
+}
+.nav-button-down1 {
+  background: #abb2bf;
+  width: 15px;
+  height: 2px;
+}
+
+.nav-button-up2 {
+  background: #abb2bf;
+  width: 25px;
+  height: 2px;
+}
+.nav-button-down2 {
+  background: #abb2bf;
+  width: 15px;
+  height: 2px;
+}
+
+.lattice {
+  color: var(--primary, #c778dd);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-img {
+  padding-bottom: 2px;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.logo-name {
+  margin-bottom: 0px;
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* project-header */
+.project-header {
+  padding-top: 114px;
+}
+
+.project-header {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* BIG-PROJECTS */
+
+.big-projects {
+  margin-top: 150px;
+}
+
+.projects-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(33.333% - 16px); /* 33.333% ширина з урахуванням відступу */
+  box-sizing: border-box; /* Враховує padding і border в ширині */
+}
+
+.projects-item:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s;
+}
+
+.projects-item-img {
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.projects-item-language {
+  height: auto;
+  padding: 8px 8px;
+}
+
+.projects-item-description {
+  height: auto;
+  padding: 8px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.project-border {
+  border: 1px solid #abb2bf;
+}
+
+.project-info {
+  border: 1px solid #c778dd;
+  color: white;
+  background-color: transparent;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-info:hover {
+  background-color: #c778dd;
+  color: white;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  border-top: 1px solid #abb2bf;
+  height: 208px;
+  overflow-x: hidden;
+  margin-top: 145px;
+}
+
+.footer-frame {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  width: 100px;
+}
+
+.footer-email {
+  margin-left: 24px;
+  width: auto;
+}
+
+.footer-context {
+  font-weight: 500px;
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+.cosial-header {
+  display: flex;
+  justify-content: center;
+}
+.cosial-img {
+  margin-top: 12px;
+}
+.footer-ps {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+
+
+
+.projects-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.projects-header-text {
+  display: flex;
+  color: var(--white, #fff);
+  font-size: 32px;
+  font-weight: 500;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.limit-line-projects {
+  height: 1px;
+  width: 240px;
+  background-color: #c778dd;
+  margin-left: 16px;
+}
